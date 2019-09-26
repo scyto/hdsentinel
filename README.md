@@ -15,6 +15,6 @@ Make sure the <yyoursharedvolume> is accesible to the windows machine / user you
 ToDo
 1. allow passing of variables to the crond logging level 
 2. allow passing of variables to the hdsentinel command line
-3. figure out how to support arm
+3. figure out how to support arm (the base image used only support amd64 due to lack of glibc on mainline alpine)
 
 Note if you want to attach an interactive tty use /bin/sh (not bash)
