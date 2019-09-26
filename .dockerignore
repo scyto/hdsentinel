@@ -1,3 +1,6 @@
 README
 README.md
 .gitignore
+.dockerignore
+Dockerfile
+LICENSE
