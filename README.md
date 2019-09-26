@@ -9,7 +9,9 @@ This is not ideal but there seems to be no other way and is less intrusive to a 
 For command line folks you will need to run with the following command:
 
           docker run -name=<yourname> --privileged -v <yoursharedvolume>:/etc/hdsentinel scyto/hdsentinel
-          
+
+Make sure the <yyoursharedvolume> is accesible to the windows machine / user you are running the hdsentinel app on.
+
 ToDo
 1. allow passing of variables to the crond logging level 
 2. allow passing of variables to the hdsentinel command line
