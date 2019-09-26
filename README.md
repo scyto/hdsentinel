@@ -1,5 +1,5 @@
 # docker-hdsentinel
-This is a docker for use with HDSentinel disk diag program NAS features https://www.hdsentinel.com/index.php
+This is a docker for use with HDSentinel disk diag program NAS and Linux features https://www.hdsentinel.com/index.php
 
 This container *MUST* be run in --privlileged mode to have access to disks.
 
@@ -7,7 +7,7 @@ This is not ideal but there seems to be no other way and is less intrusive to a 
 
 For command line folks you will need to run with the following command:
 
-          docker run -name=<yourname> --priveleged -v <yoursharedvolume>:/etc/hdsentinel scyto/hdsentinel
+          docker run -name=<yourname> --privileged -v <yoursharedvolume>:/etc/hdsentinel scyto/hdsentinel
           
 ToDo
 1. allow passing of variables to the crond logging level 
