@@ -1,4 +1,4 @@
-# docker-hdsentinel
+# hdsentinel
 This is a docker for use with HDSentinel disk diag program NAS and Linux features https://www.hdsentinel.com/index.php
 This container currently only support amd64
 
