@@ -1,5 +1,6 @@
 # docker-hdsentinel
 This is a docker for use with HDSentinel disk diag program NAS and Linux features https://www.hdsentinel.com/index.php
+This container currently only support amd64
 
 This container *MUST* be run in --privlileged mode to have access to disks.
 
@@ -12,5 +13,6 @@ For command line folks you will need to run with the following command:
 ToDo
 1. allow passing of variables to the crond logging level 
 2. allow passing of variables to the hdsentinel command line
+3. figure out how to support arm
 
 Note if you want to attach an interactive tty use /bin/sh (not bash)
