@@ -3,7 +3,7 @@ This is a docker for use with HDSentinel disk diag program NAS features https://
 
 This container *MUST* be run in --privlileged mode to have access to disks.
 
-This is not ideal but there seems to be no other way and is less intrusive to a base NAS (like a Synology where support gets funny if you mess around too much.  If you know of a way to make this container run unpriviledged please let me know!
+This is not ideal but there seems to be no other way and is less intrusive to a base NAS (like a Synology) where support gets funny if you mess around too much.  If you know of a way to make this container run unpriviledged please let me know!
 
 For command line folks you will need to run with the following command:
 
