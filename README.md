@@ -2,7 +2,7 @@
 This is a docker for use with HDSentinel disk diag program NAS and Linux features https://www.hdsentinel.com/index.php
 This container currently only support amd64.  It allows your to see all of your drive health across your NAS Linux devices in the windows application.
 
-
+![Image of HDSentinel](https://github.com/scyto/hdsentinel/blob/dev/images/hdsentinel.png)
 
 This container *MUST* be run in --privlileged mode to have access to disks (aka the container has near-root privileges across all containers and the host).
 
@@ -14,7 +14,7 @@ For command line folks you will need to run with the following command:
 
 Make sure the <yyoursharedvolume> is accesible to the windows machine / user you are running the hdsentinel app on.
 
-ToDo
+## ToDo
 1. allow passing of variables to the crond logging level 
 2. allow passing of variables to the hdsentinel command line
 3. figure out how to support arm (the base image used only support amd64 due to lack of glibc on mainline alpine)
