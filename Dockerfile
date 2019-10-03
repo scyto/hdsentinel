@@ -4,16 +4,15 @@ FROM frolvlad/alpine-glibc
 # Copy the current directory contents into the container at /app
 COPY hdsentinel.sh .
 
-# Install any needed packages specified in requirements.txt
-RUN apk add wget \
+# Install any needed packages and do needed file system modifcations
+RUN apk add --no-cache wget \
 	&& wget https://www.hdsentinel.com/hdslin/hdsentinel-017-x64.gz \
-	&& gunzip hdsentinel-017-x64.gz
-
-# File system modifications
-RUN chmod 0755 hdsentinel-017-x64 \
+	&& gunzip hdsentinel-017-x64.gz \
+	&& apk del wget \
+	&& chmod 0755 hdsentinel-017-x64 \
 	&& mkdir /etc/hdsentinel\
+    	&& mv hdsentinel-017-x64 /bin/hdsentinel \
 	&& chmod +x hdsentinel.sh \
-    && mv hdsentinel-017-x64 /bin/hdsentinel \
 	&& echo "*/10       *       *       *       *       hdsentinel -r /etc/hdsentinel/hdsreport.html -html" >> /var/spool/cron/crontabs/root
 
 # Define environment variable
