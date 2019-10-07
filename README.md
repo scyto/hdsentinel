@@ -3,7 +3,7 @@
 This is a docker for use with HDSentinel disk diag program NAS and Linux features <https://www.hdsentinel.com/index.php>
 This container currently only support amd64.  It allows your to see all of your drive health across your NAS Linux devices in the windows application.
 
-![Image of HDSentinel](https://github.com/scyto/hdsentinel/raw/master/images/hdsentinel.png)
+![Image of HDSentinel|,50%](https://github.com/scyto/hdsentinel/raw/master/images/hdsentinel.png)
 
 This container *MUST* be run in --privlileged mode to have access to disks (aka the container has near-root privileges across all containers and the host).
 
