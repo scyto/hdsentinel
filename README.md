@@ -11,7 +11,7 @@ This is not ideal but there seems to be no other way and is less intrusive to a 
 
 For command line folks you will need to run with the following command:
 
-          docker run -name=<yourname> --privileged -v <yoursharedvolume>:/etc/hdsentinel scyto/hdsentinel
+          docker run --name=<yourname> --privileged -v <yoursharedvolume>:/etc/hdsentinel scyto/sentinel
 
 Make sure the <\yoursharedvolume\> is accesible to the windows machine / user you are running the hdsentinel app on.
 
